@@ -1,0 +1,16 @@
+<!-- /views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+  <body>
+
+    <div id="react-main-mount" data-json="<%= JSON.stringify(dataJson) %>">
+      <%- reactOutput %>
+    </div>
+  <!-- this script bootstraps the app once the JS is downloaded -->
+  <script src="/main.js"></script>
+  </body>
+</html>
